@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html" />
+	<meta charset="UTF-8"/>
+	<link type="text/css" rel="stylesheet" href="calendar.css" >
+	<script type="text/javascript" src="calendar.js" ></script>  
+	<script type="text/javascript" src="calendar-zh.js" ></script>
+	<script type="text/javascript" src="calendar-setup.js"></script>
+
+</head>
+
+<body>
+	<from action="" method="POST">
+		<p>考试科目：<input type="text" name="subject">
+		<p>考试日期：<input type="text" id="EntTime" name="EntTime" onclick="return showCalendar('EntTime', 'y-mm-dd');"  />
+		<p>考试时间：
+		<div>
+			<input type="radio" name="time" value="08">08:00
+			<input type="radio" name="time" value="10">10:00
+			<input type="radio" name="time" value="13">13:30
+			<input type="radio" name="time" value="15">15:30
+			<input type="radio" name="time" value="18">18:00<br>
+		</div>
+		<p>放音区域：<br>
+		<div>
+			<input type="checkbox" name="area" value="B2">B区2层
+			<input type="checkbox" name="area" value="B3">B区3层
+			<input type="checkbox" name="area" value="B4">B区4层
+			<input type="checkbox" name="area" value="B5">B区5层
+			<input type="checkbox" name="area" value="B6">B区6层<br>
+			<input type="checkbox" name="area" value="C2">C区2层
+			<input type="checkbox" name="area" value="C3">C区3层
+			<input type="checkbox" name="area" value="C4">C区4层
+			<input type="checkbox" name="area" value="C5">C区5层
+			<input type="checkbox" name="area" value="C6">C区6层
+		</div>
+		<p>音频文件：
+		<div>
+			<input type="file">
+			<input type="submit" value="上传音频文件">
+		<p>音频文件地址：
+		</div>
+		<p><input type="submit" value="确认">
+
+	</form>
+</body>
+</html>
